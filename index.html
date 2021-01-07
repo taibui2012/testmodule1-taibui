@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Bài thi thực hành - Tai Bui</title>
+</head>
+
+<body>
+<canvas id="canvas" width="600" height="600"></canvas>
+
+<script>
+    /* Bài 1
+    let array = [10,0,3,9,8,1,7];
+
+    function findMax(arr) {
+        let maxNumber;
+        for(let i = 0; i < arr.length; i++){
+            if(!maxNumber){
+                maxNumber = arr[i]
+            }
+            if(arr[i] > maxNumber){
+                maxNumber = arr[i];
+            }
+        }
+        return maxNumber
+    }
+    alert(findMax(array));
+
+     */
+
+    /* Bài 2
+    let array3 = [2, 2, 6, -13, -63, 12, 67, -32, 23, -12, 43, 12]
+
+    function TryRemoveFromArray(x) {
+        for (let i = 1; i <= 2; i++) {
+            for (let a of array3) {
+                let i = array3.indexOf(x)
+                if (a == x) {
+                    array3.splice(i, 1)
+                }
+            }
+        }
+        return array3;
+    }
+    TryRemoveFromArray(6);
+
+    document.write("<br>")
+    document.write("Mảng mới sau khi xoá các số có giá trị bằng x: ", array3)
+
+     */
+
+
+    /* Bài 3
+    function isFibonacci (query, count = 1, last = 0) {
+        if(count < query){
+            return isFibonacci(query, count+last, count);
+        }
+        else if (count === query){
+            return true;
+        }
+        return false;
+    }
+    alert(isFibonacci(37889062373143906));
+
+     */
+
+/* Bài 4
+    class Circle {
+        constructor(x, y, r, color) {
+            this.x = x;
+            this.y = y;
+            this.r = r;
+            this.color = color;
+        }
+        render() {
+            this.canvas = document.getElementById("canvas");
+            this.ctx = canvas.getContext("2d");
+            this.ctx.beginPath();
+            this.ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
+            this.ctx.fillStyle = this.color;
+            this.ctx.fill();
+        }
+    }
+    let myCircle = new Circle(10, 10, 100, "#000000");
+    myCircle.render();
+    */
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
